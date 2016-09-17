@@ -11,3 +11,9 @@ services:
       - "3000:3000"
     depends_on:
       - db
+  
+  spring:
+    build: .
+    volumes:
+      - .:/app
+    command: spring server
