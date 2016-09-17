@@ -13,13 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ @import 'twitter-bootstrap-static/bootstrap';
+ .alert-alert {
+   @extend .alert-warning;
+ }
 
- ul.hmenu {
-  list-style: none;
-  margin: 0 0 2em;
-  padding: 0;
-}
-
-ul.hmenu li {
-  display: inline;
-}
+ .alert-notice {
+   @extend .alert-info;
+ }
